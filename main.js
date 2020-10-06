@@ -39,11 +39,12 @@ function createRandomArray(n, low, high) {
     for (let i = 0; i < n; i++) {
         randomArray.push(Math.randomDec(low, high))
     }
+    return randomArray
 }
 
 let sampleData = createRandomArray(100, 20, 60);
 // sampleData should store 100 random decimals between 20 and 60
-console.log(sampleData)
+
 
 let randomHeights = createRandomArray(12, 4, 7);
 // randomHeights should store 12 random decimals between 4 and 7
